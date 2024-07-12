@@ -17,7 +17,7 @@ body{
 }
 .left{
     width: 60%;
-    margin: 60px 0px 0px 60px;
+    margin: 60px 0px 60px 60px;
 /* background-color: red; */
 box-sizing: border-box;
 
@@ -43,7 +43,8 @@ box-sizing: border-box;
     position: relative;
 left: 20%;
 bottom: 20px;
-    border: 1px solid var(--Rose-500);
+    border: 1px solid hsl(14, 86%, 42%);
+    cursor:pointer;
 }
 .add-to-cart p{
     font-weight: 600;
@@ -64,8 +65,58 @@ margin: 4px 0px;
     font-weight: 600;
     color: hsl(14, 86%, 42%);
 }
+.right{
+    width: 30%;
+    margin: 60px 60px 0px 0px;
+}
 .cart{
-    width: 40%;
-    background-color: aqua;
-    margin-top: 60px;
+    background-color: white;
+    padding: 20px 0px 0px 20px;
+    border-radius: 6px; 
+    
+}
+.empty{
+    width: 150px;
+    margin: 30px 0px 20px;
+}
+.cart h2{
+    color: hsl(14, 86%, 42%);
+}
+.cart div p{
+    font-size: 14px;
+    color: var(--Rose-500);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.change-qty{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(14, 86%, 42% );
+    width: 60%;
+    height: 40px;
+    border-radius: 25px;
+    gap: 3px;
+    position: relative;
+left: 20%;
+bottom: 20px;
+    border: 1px solid hsl(14, 86%, 42%);
+    color: white;
+}
+.qty-sign{
+    border-radius: 25px;
+    border: 1px solid white;
+    /* padding: 2px 5px; */
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}       
+.qty-add{
+    padding: 5px;
+
+}
+.qty-minus{
+    padding: 9px 5px;
 }
