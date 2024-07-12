@@ -1,122 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'red hat text';
 
 }
-:root{
---Rose-50: hsl(20, 50%, 98%);
---Rose-100: hsl(13, 31%, 94%);
---Rose-400: hsl(7, 20%, 60%);
---Rose-500: hsl(12, 20%, 44%);
---Rose-900: hsl(14, 65%, 9%);
+
+:root {
+    --Rose-50: hsl(20, 50%, 98%);
+    --Rose-100: hsl(13, 31%, 94%);
+    --Rose-400: hsl(7, 20%, 60%);
+    --Rose-500: hsl(12, 20%, 44%);
+    --Rose-900: hsl(14, 65%, 9%);
 }
-body{
+
+body {
     background-color: var(--Rose-100);
 }
-.left{
+
+.left {
     width: 60%;
     margin: 60px 0px 60px 60px;
-/* background-color: red; */
-box-sizing: border-box;
+    /* background-color: red; */
+    box-sizing: border-box;
 
 }
-.left h1{
-    margin: 0px 0px 20px 0px ;
+
+.left h1 {
+    margin: 0px 0px 20px 0px;
 }
-.product-list{
+
+.product-list {
     gap: 20px;
-    justify-content:flex-start
+    justify-content: flex-start
 }
 
-.product >img{
+.product>img {
     width: 270px;
     border-radius: 6px;
 }
-.add-to-cart{
-    background-color:white;
+
+.add-to-cart {
+    background-color: white;
     width: 60%;
     height: 40px;
     border-radius: 25px;
     gap: 3px;
     position: relative;
-left: 20%;
-bottom: 20px;
+    left: 20%;
+    bottom: 20px;
     border: 1px solid hsl(14, 86%, 42%);
-    cursor:pointer;
+    cursor: pointer;
 }
-.add-to-cart p{
+
+.add-to-cart p {
     font-weight: 600;
-font-size: 14px;
+    font-size: 14px;
 }
-.category{
-font-size: 12px;
-font-weight: 400;
-color: var(--Rose-500);
+
+.category {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Rose-500);
 }
-.product-name{
-font-size: 16px;
-font-weight: 600;
-margin: 4px 0px;
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 4px 0px;
 }
-.price{
+
+.price {
     font-size: 16px;
     font-weight: 600;
     color: hsl(14, 86%, 42%);
 }
-.right{
+
+.right {
     width: 30%;
     margin: 60px 60px 0px 0px;
 }
-.cart{
+
+.cart {
     background-color: white;
-    padding: 20px 0px 0px 20px;
-    border-radius: 6px; 
-    
+    padding: 20px 0px 0px 0px;
+    border-radius: 6px;
+
 }
-.empty{
+
+.empty {
     width: 150px;
     margin: 30px 0px 20px;
 }
-.cart h2{
+
+.cart h2 {
     color: hsl(14, 86%, 42%);
+    margin-left: 20px;
 }
-.cart div p{
+
+.cart div p.empty-cart-message {
     font-size: 14px;
     color: var(--Rose-500);
     font-weight: 600;
     margin-bottom: 30px;
 }
 
-.change-qty{
+.change-qty {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: hsl(14, 86%, 42% );
+    background-color: hsl(14, 86%, 42%);
     width: 60%;
     height: 40px;
     border-radius: 25px;
     gap: 3px;
     position: relative;
-left: 20%;
-bottom: 20px;
+    left: 20%;
+    bottom: 20px;
     border: 1px solid hsl(14, 86%, 42%);
     color: white;
 }
-.qty-sign{
+
+.qty-sign {
     border-radius: 25px;
     border: 1px solid white;
-    /* padding: 2px 5px; */
     background: none;
     display: flex;
     justify-content: center;
     align-items: center;
-}       
-.qty-add{
-    padding: 5px;
-
 }
-.qty-minus{
+
+.qty-plus {
+    padding: 5px;
+}
+
+.qty-minus {
     padding: 9px 5px;
+}
+
+.qty-plus:hover,
+.qty-minus:hover {
+    background-color: white;
+}
+
+.items {
+    width: 90%;
+    background-color: red;
+    justify-content: space-between;
+}
+
+.cross {
+    border: none;
+    height: 18px;
+    width: 18px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.quantity,
+.price-per-item,
+.total-price {
+    padding: 10px 8px;
+}
+
+.items div p {
+    margin-bottom: 10px;
+}
+
+.block {
+    padding: 15px 0px;
 }
