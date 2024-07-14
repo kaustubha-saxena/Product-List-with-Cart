@@ -13,6 +13,7 @@
     --Rose-400: hsl(7, 20%, 60%);
     --Rose-500: hsl(12, 20%, 44%);
     --Rose-900: hsl(14, 65%, 9%);
+    --red:hsl(14, 86%, 42%);
 }
 
 body {
@@ -74,7 +75,7 @@ body {
 .price {
     font-size: 16px;
     font-weight: 600;
-    color: hsl(14, 86%, 42%);
+    color: var(--red);
 }
 
 .right {
@@ -84,7 +85,7 @@ body {
 
 .cart {
     background-color: white;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 30px 0px;
     border-radius: 6px;
 
 }
@@ -95,7 +96,7 @@ body {
 }
 
 .cart h2 {
-    color: hsl(14, 86%, 42%);
+    color:var(--red);
     margin-left: 20px;
 }
 
@@ -110,7 +111,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: hsl(14, 86%, 42%);
+    background-color: var(--red);
     width: 60%;
     height: 40px;
     border-radius: 25px;
@@ -118,7 +119,7 @@ body {
     position: relative;
     left: 20%;
     bottom: 20px;
-    border: 1px solid hsl(14, 86%, 42%);
+    border: 1px solid var(--red);
     color: white;
 }
 
@@ -146,7 +147,7 @@ body {
 
 .items {
     width: 90%;
-    background-color: red;
+    /* background-color: red; */
     justify-content: space-between;
 }
 
@@ -157,6 +158,10 @@ body {
     background: none;
     border: 1px solid black;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
 }
 
 .quantity,
@@ -171,4 +176,44 @@ body {
 
 .block {
     padding: 15px 0px;
+}
+.line{
+    width:90% ;
+    height: 1px;
+    background-color: black;
+}
+.total{
+    justify-content:space-between ;
+    width: 90%;
+    margin: 20px auto;
+    
+}
+.total p:nth-child(1){
+    font-size:14px;
+    color: var(--Rose-500);
+}
+.total p:nth-child(2){
+    font-size:24px;
+    font-weight: 700;
+    color: var(--Rose-500);
+}
+
+.carbon{
+    margin: 20px auto;
+    gap: 10px;
+    width: 80%;
+    height:50px;
+    border-radius: 6px;
+    background-color: var(--Rose-100);
+}
+.Confirm-Order{
+    padding: 20px 0px ;
+    width: 80%;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--red);
+    color: white;
+    font-weight: 600;
+    margin:0px 45px ;
+    cursor: pointer;
 }
